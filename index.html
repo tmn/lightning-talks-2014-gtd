@@ -11,36 +11,82 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
   }
+  .front-page {
+    text-align: center;
+    vertical-align: bottom;
+  }
+
+  .front-page h1 {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 3.2em auto;
+    width: 16em;
+  }
+
+  .front-page h1:before { border: none; }
+
+  .front-page h1:after {
+    border-top-width: 2px;
+    border-top-style: solid;
+    position: absolute;
+    left: 50%;
+    bottom: -1.6em;
+    content: "";
+    width: 260px;
+    margin-left: -130px;
+    z-index: -1;
+  }
+
+  .front-page h2 {
+    height: 3em;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 2em auto 2em auto;
+    max-width: 25em;
+  }
+
+  .front-page p {
+    font-size: 0.7em;
+    margin: 0.3em 0;
+  }
+
+  .front-page .position { display: none; }
+
+  .front-page ul {
+    list-style: none;
+    margin: 0 0 28px 0;
+    padding: 0;
+    font-size: 16px;
+  }
+
   .left-column {
-        color: #777;
-        width: 20%;
-        height: 92%;
-        float: left;
-      }
-        .left-column h2:last-of-type, .left-column h3:last-child {
-          color: #000;
-        }
-      .right-column {
-        width: 75%;
-        float: right;
-        padding-top: 2em;
-      }
+    color: #777;
+    width: 20%;
+    height: 92%;
+    float: left;
+  }
+    .left-column h2:last-of-type, .left-column h3:last-child {
+      color: #000;
+    }
+  .right-column {
+    width: 75%;
+    float: right;
+    padding-top: 2em;
+  }
   </style>
 </head>
 <body>
   <textarea id="source">
 
-class: center, middle
+class: front-page
 
 # GTD
 
 ## Getting things done
 
-Tri M. Nguyen
-
-Slider for lightning talks med Online &amp; Abakus
-
-17.03.2014
+* Tri M. Nguyen
+* Slider for lightning talks med Online &amp; Abakus
+* 17.03.2014
 
 
 ---
@@ -67,6 +113,36 @@ class: center, middle
 
 # ... ikke en gang dette?
 
+
+---
+
+.left-column[
+  # Har så mye å gjøre!
+]
+
+.right-column[
+
+  * tømme oppvaskmaskina
+  * sette på klesvasken
+  * henge opp klær
+  * gjøre siste oppgave i øving 5
+  * trene
+
+]
+
+---
+
+
+class: center, middle
+
+## _"Men, bli med ut da?"_
+
+---
+
+
+class: center, middle
+
+# "Nei, hakke tid!"
 
 ---
 
